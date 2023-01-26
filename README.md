@@ -9,11 +9,11 @@ For this project, there are 40 features or functionality to build. You are requi
 ## Overview
 
 > **Note**: You should start with the back-end.
+
 - You will be working in groups of 4 for this 4 day Sprint.
 - You will be given 4 tokens. These tokens represent the number of debugging questions **per team** you are allowed to ask an instructor during this complete sprint. (clarifying questions about the instructions are not included)
 - Using the [`project-snack-a-log-frontend`](https://github.com/9-1-pursuit/project-snack-a-log-frontend) and [`project-snack-a-log-backend`](https://github.com/9-1-pursuit/project-snack-a-log-backend) repos, create a full-stack web application by building the two applications and having them interact.
 - Use Express to build a complete CRUD back-end application that adheres to RESTful routes.
-- Use back-end unit tests to guide the building process.
 - Deploy the applications separately so that anyone can see them online and the two online applications can interact.
 
 ## User Stories, Acceptance Criteria, and Code Quality Rubric
@@ -47,8 +47,8 @@ For this project, there are 40 features or functionality to build. You are requi
 
 > **Note**: There are no back-end tests; your hosted application's functionality and code quality will be used to evaluate you.
 
-
 ### Snack Schema
+
 - id: serial, should be primary key
 - name: string, name value is required
 - fiber: number, default 0, fiber value is required
@@ -56,7 +56,6 @@ For this project, there are 40 features or functionality to build. You are requi
 - added_sugar: number, default 0
 - isHealthy: boolean
 - image: string, default `https://dummyimage.com/400x400/6e6c6e/e9e9f5.png&text=No+Image`
-
 
 ### Seed Data
 
@@ -107,7 +106,6 @@ PG_DATABASE=snack_a_log
 - `npm run db:seed` - seed the table(s) with some data.
 - `nodemon` - confirm that this is running on port 3333.
 - Visit http://localhost:3333/snacks/ and make sure you see some snack data in the form of an array of objects.
-- `npm run test` - to run the back-end tests.
 
 ### Front-end setup
 
