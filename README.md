@@ -12,7 +12,7 @@ For this project, there are 40 features or functionality to build. You are requi
 
 - You will be working in groups of 4 for this 4 day Sprint.
 - You will be given 4 tokens. These tokens represent the number of debugging questions **per team** you are allowed to ask an instructor during this complete sprint. (clarifying questions about the instructions are not included)
-- Using the [`project-snack-a-log-frontend`](https://github.com/9-1-pursuit/project-snack-a-log-frontend) and [`project-snack-a-log-backend`](https://github.com/9-1-pursuit/project-snack-a-log-backend) repos, create a full-stack web application by building the two applications and having them interact.
+- Using the [`project-snack-a-log-frontend`](https://github.com/9-2-pursuit/project-snack-a-log-frontend) and [`project-snack-a-log-backend`](https://github.com/9-2-pursuit/project-snack-a-log-backend) repos, create a full-stack web application by building the two applications and having them interact.
 - Use Express to build a complete CRUD back-end application that adheres to RESTful routes.
 - Deploy the applications separately so that anyone can see them online and the two online applications can interact.
 
@@ -72,7 +72,7 @@ INSERT INTO snacks (name, fiber, protein, added_sugar, is_healthy, image) VALUES
 
 ### Additional points:
 
-- Completed front-end (see [project-snack-a-log-front-end](https://github.com/9-1-pursuit/project-snack-a-log-frontend) for more details)
+- Completed front-end (see [project-snack-a-log-front-end](https://github.com/9-2-pursuit/project-snack-a-log-frontend) for more details)
 
 > **Grand total**: 45 points
 
@@ -82,7 +82,7 @@ Create a top-level folder that will contain both your back-end and front-end app
 
 1. Create a directory called `project-snack-a-log`.
 1. `cd` into the directory.
-1. Fork and clone the [`project-snack-a-log-back-end`](https://github.com/9-1-pursuit/project-snack-a-log-backend) repo into your `project-snack-a-log` directory.
+1. Fork and clone the [`project-snack-a-log-back-end`](https://github.com/9-2-pursuit/project-snack-a-log-backend) repo into your `project-snack-a-log` directory.
 1. Change the name of your `project-snack-a-log-backend` directory to `back-end`.
 
 ### Back-end setup
@@ -117,6 +117,6 @@ Use the resources below to deploy your application.
 
 ### Back-end Deployment
 
-1. [Render.com Deployment Instructions](https://github.com/9-1-pursuit/guide-deployment/tree/main/render-express-postgres)
+1. [Render.com Deployment Instructions](https://github.com/9-2-pursuit/guide-deployment/tree/main/render-express-postgres)
 2. [Render.com Deployment Video Part 1, Express](https://drive.google.com/file/d/1JefmByjhsh8zoLwzpwdv-Hn9Wg4ezaOB/view?usp=sharing)
 3. [Render.com Deployment Video Part 2, Postgresql](https://tobecreated)
