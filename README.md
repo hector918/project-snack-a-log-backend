@@ -11,7 +11,6 @@ For this project, there are 40 features or functionality to build. You are requi
 > **Note**: You should start with the back-end.
 
 - You will be working in groups of 4 for this 4 day Sprint.
-- You will be given 4 tokens. These tokens represent the number of debugging questions **per team** you are allowed to ask an instructor during this complete sprint. (clarifying questions about the instructions are not included)
 - Using the [`project-snack-a-log-frontend`](https://github.com/9-2-pursuit/project-snack-a-log-frontend) and [`project-snack-a-log-backend`](https://github.com/9-2-pursuit/project-snack-a-log-backend) repos, create a full-stack web application by building the two applications and having them interact.
 - Use Express to build a complete CRUD back-end application that adheres to RESTful routes.
 - Deploy the applications separately so that anyone can see them online and the two online applications can interact.
