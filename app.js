@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('*', (req, res) => {
-  console.log(req.baseUrl)
+  console.log(req.url)
   res.status(404).send("page not found!");
 });
 

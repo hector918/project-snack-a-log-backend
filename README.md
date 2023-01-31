@@ -46,6 +46,10 @@ For this project, there are 40 features or functionality to build. You are requi
 
 > **Note**: There are no back-end tests; your hosted application's functionality and code quality will be used to evaluate you.
 
+Snack Health Criteria (the snack is considered unhealthy when one of the two conditions are met)
+
+Sugar is more than 5 Protein is less than 5 and Fiber is less than 5
+
 ### Snack Schema
 
 - id: serial, should be primary key
