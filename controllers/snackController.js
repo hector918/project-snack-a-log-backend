@@ -52,15 +52,15 @@ snacks.delete("/:id", async (req, res)=>{
     res.status(500).json({error:"delete failed"});
   }
 });
-
+///////////////////////////////////////////////
 function process_snack_(body){
-  let {name, fiber, protein, added_sugar, image } = body;
+  let {name, fiber, protein, added_sugar, is_organic, image } = body;
   name = cap_work( name );
   let is_healthy = check_healthy_criteria(fiber, protein, added_sugar);
-  let ret = { name, fiber, protein, added_sugar, is_healthy };
+  let ret = { name, fiber, protein, added_sugar, is_organic, is_healthy };
+  is_organic = Boolean(is_organic)? true : false;
   if(image !== "") ret.image = image;
   return ret;
-///////////////////////////////////////////////
   function cap_work(words){
     return words.split(" ").map(word=>word.substring(0,1).toUpperCase() + word.substring(1).toLowerCase()).join(" ");
   }
