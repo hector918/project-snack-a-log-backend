@@ -11,6 +11,7 @@ app.use(express.json());
 
 // ROUTES
 app.use('/snacks', require('./controllers/snackController'));
+app.use(express.static("./frontend/build"));
 
 app.get('/', (req, res) => {
   res.send("here is the root.");

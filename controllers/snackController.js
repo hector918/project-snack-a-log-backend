@@ -26,7 +26,10 @@ snacks.get("/:id", async (req, res)=>{
 //create
 snacks.post("/", vd.checkSnackForm, async (req, res)=>{
   try {
+    console.log("abcd")
     res.send(await queries.createSnack(process_snack_(req.body)));
+    console.log("efg")
+
   } catch (error) {
     console.log(error,"in post error");
     res.status(500).json({error});
