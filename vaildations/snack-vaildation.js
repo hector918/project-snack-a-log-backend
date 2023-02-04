@@ -7,7 +7,7 @@ const checkSnackForm = (req, res, next)=>{
     if(isNaN(Number(fiber))) ret.push("fiber is required as number");
     if(isNaN(Number(protein))) ret.push("protein is required as number");
     if(isNaN(Number(added_sugar))) ret.push("added_sugar is required as number");
-    if(typeof (is_organic) !== 'boolean') ret.push("is_organic is required as boolen");
+    
     if(image!==""){
       let url_reg = new RegExp (/^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/);
       if (!url_reg.test(image)) ret.push("image must be an URL or empty");
