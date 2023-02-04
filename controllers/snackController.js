@@ -26,7 +26,10 @@ snacks.get("/:id", async (req, res)=>{
 //create
 snacks.post("/", vd.checkSnackForm, async (req, res)=>{
   try {
+    console.log("abcd")
     res.send(await queries.createSnack(process_snack_(req.body)));
+    console.log("efg")
+
   } catch (error) {
     console.log(error,"in post error");
     res.status(500).json({error});
@@ -57,8 +60,9 @@ function process_snack_(body){
   let {name, fiber, protein, added_sugar, is_organic, image } = body;
   name = cap_work( name );
   let is_healthy = check_healthy_criteria(fiber, protein, added_sugar);
-  let ret = { name, fiber, protein, added_sugar, is_organic, is_healthy };
   is_organic = Boolean(is_organic)? true : false;
+
+  let ret = { name, fiber, protein, added_sugar, is_organic, is_healthy };
   if(image !== "") ret.image = image;
   return ret;
   function cap_work(words){

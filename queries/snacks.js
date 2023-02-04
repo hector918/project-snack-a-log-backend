@@ -21,6 +21,7 @@ const createSnack = async ( body ) =>{
   try {
     let table = Object.keys(body).join(",");
     let values = Object.keys(body).map(el=>`$[${el}]`).join(",");
+    
     return await db.one(`INSERT INTO snacks (${table}) VALUES(${values}) RETURNING *`, body);
   } catch (error) {
     throw error;
@@ -30,7 +31,9 @@ const createSnack = async ( body ) =>{
 const updateSnack = async ( id, body ) =>{
   try {
     let table = [];
+    
     for([key, val] of Object.entries(body)) table.push(`${key}=$[${key}]`);
+    console.log(table)
     return await db.one(`UPDATE snacks SET ${table.join(',')} WHERE id = $[id] RETURNING *`, {...body, id});
   } catch (error) {
     throw error;

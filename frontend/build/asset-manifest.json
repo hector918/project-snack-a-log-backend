@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.31d6cfe0.css",
+    "main.js": "/static/js/main.cf67fada.js",
+    "static/media/fotoPersonal.jpg": "/static/media/fotoPersonal.80a892fc2c4e05747666.jpg",
+    "static/media/fotoHector.png": "/static/media/fotoHector.87187cadb90b5f380d30.png",
+    "index.html": "/index.html",
+    "main.cf67fada.js.map": "/static/js/main.cf67fada.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.cf67fada.js"
+  ]
+}
