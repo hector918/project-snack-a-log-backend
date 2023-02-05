@@ -57,7 +57,11 @@ snacks.delete("/:id", async (req, res)=>{
 });
 ///////////////////////////////////////////////
 function process_snack_(body){
-  let {name, fiber, protein, added_sugar, is_organic, image } = body;
+  let {name, is_organic, image } = body;
+  let fiber = Math.round(body.fiber);
+  let protein = Math.round(body.protein);
+  let added_sugar = Math.round(body.added_sugar);
+
   name = cap_work( name );
   let is_healthy = check_healthy_criteria(fiber, protein, added_sugar);
   is_organic = Boolean(is_organic)? true : false;
@@ -65,6 +69,7 @@ function process_snack_(body){
   let ret = { name, fiber, protein, added_sugar, is_organic, is_healthy };
   if(image !== "") ret.image = image;
   return ret;
+  
   function cap_work(words){
     return words.split(" ").map(word=>word.substring(0,1).toUpperCase() + word.substring(1).toLowerCase()).join(" ");
   }
